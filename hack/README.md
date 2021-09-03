@@ -14,7 +14,7 @@ Or
 
 Runs installs all the necessary dependencies needed for the project.
 
-### `npm run`
+### `npm start`
 
 Or
 
