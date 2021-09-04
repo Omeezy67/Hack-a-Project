@@ -10,6 +10,19 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <script>
+      window.watsonAssistantChatOptions = {
+          integrationID: "6b8f234a-fd81-40ec-b075-123d7cd88856", // The ID of this integration.
+          region: "us-east", // The region your integration is hosted in.
+          serviceInstanceID: "f7162d05-ff9e-49fa-96f2-354425242cb0", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"
+        document.head.appendChild(t);
+      });
+    </script>    
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
