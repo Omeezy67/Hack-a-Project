@@ -40,7 +40,7 @@ function Quiz() {
                 <Card>
                     <CardTitle>Science</CardTitle>
                     <img className="Image" src={science} alt="science"/>
-                    <Desc>These are questions about science and nature.</Desc>
+                    <Desc>These are questions about science and computers.</Desc>
                     <Link to="/quiz/science">
                         <p className="button" onClick={() => {}}>Play</p>
                     </Link>

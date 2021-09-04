@@ -1,0 +1,125 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Sports",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "In baseball, how many fouls are an out?",
+            "correct_answer": 0,
+            "incorrect_answers": [
+                5,
+                3,
+                2
+            ]
+        },
+        {
+            "category": "Sports",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "Which team won 2014 FIFA World Cup in Brazil?",
+            "correct_answer": "Germany",
+            "incorrect_answers": [
+                "Argentina",
+                "Brazil",
+                "Netherlands"
+            ]
+        },
+        {
+            "category": "Sports",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "In Baseball, how many times does the ball have to be pitched outside of the strike zone before the batter is walked?",
+            "correct_answer": 4,
+            "incorrect_answers": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "category": "Sports",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "In Formula 1, the Virtual Safety Car was introduced following the fatal crash of which driver?",
+            "correct_answer": "Jules Bianchi",
+            "incorrect_answers": [
+                "Ayrton Senna",
+                "Ronald Ratzenberger",
+                "Gilles Villeneuve"
+            ]
+        },
+        {
+            "category": "Sports",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "Which African American is in part responsible for integrating  Major League baseball?",
+            "correct_answer": "Jackie Robinson",
+            "incorrect_answers": [
+                "Curt Flood",
+                "Roy Campanella",
+                "Satchell Paige"
+            ]
+        },
+        {
+            "category": "Sports",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "Which player holds the NHL record of 2,857 points?",
+            "correct_answer": "Wayne Gretzky",
+            "incorrect_answers": [
+                "Mario Lemieux ",
+                "Sidney Crosby",
+                "Gordie Howe"
+            ]
+        },
+        {
+            "category": "Sports",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "The Los Angeles Dodgers were originally from what U.S. city?",
+            "correct_answer": "Brooklyn",
+            "incorrect_answers": [
+                "Las Vegas",
+                "Boston",
+                "Seattle"
+            ]
+        },
+        {
+            "category": "Sports",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What is Tiger Woods all-time best career golf-score?",
+            "correct_answer": 61,
+            "incorrect_answers": [
+                65,
+                63,
+                67
+            ]
+        },
+        {
+            "category": "Sports",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Who was the top scorer of the 2014 FIFA World Cup?",
+            "correct_answer": "James Rodriguez",
+            "incorrect_answers": [
+                "Thomas Muller",
+                "Lionel Messi",
+                "Neymar"
+            ]
+        },
+        {
+            "category": "Sports",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "The AHL affiliate team of the Boston Bruins is named what?",
+            "correct_answer": "Providence Bruins",
+            "incorrect_answers": [
+                "New Haven Bruins",
+                "Cambridge Bruins",
+                "Hartford Bruins"
+            ]
+        }
+    ]
+}

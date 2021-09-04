@@ -14,6 +14,7 @@ function General() {
     const correctAnswer = questionsObj[curQuestionNumber].correct_answer
     const allAnswers = [...incorrectAnswers, correctAnswer]
     const [verif, setVerif] = useState("")
+    const [smart, setSmart] = useState(0)
     useEffect(() => {
         console.log("render")
         curQuestion = questionsObj[curQuestionNumber].question 
@@ -26,6 +27,7 @@ function General() {
         setCheck(true);
         a = ans
         a === correctAnswer ? setVerif("Correct") : setVerif(`Wrong. Answer: ${correctAnswer}`);
+        a === correctAnswer ? setSmart(smart+1) : setSmart(smart);
     }
     return (
         <Wrapper>
@@ -33,6 +35,7 @@ function General() {
                 <button className="" style={{fontSize: 18, marginLeft: 32, marginTop: 32,}}onClick={() => {}}>Back</button>
             </Link>
             <QuestionCard>
+                <h1>Correct count: {smart}</h1>
                 <QuestionNumber>Question: {curQuestionNumber + 1}/{questionsObj.length}</QuestionNumber>
                 <CardTitle>{`${curQuestion}`}</CardTitle>
                 { check ? 
@@ -65,14 +68,6 @@ function General() {
                     fontSize: check ? 18 : 0,
                 }}>{verif}</h3>
             </QuestionCard>
-            {/*a == correctAnswer ? 
-                <Correct>Correct!</Correct> 
-                : 
-                <div>
-                    <Correct>Wrong!</Correct>
-                    <RightAnswer>{correctAnswer}</RightAnswer>
-                </div>
-            */}
         </Wrapper>
     )
 }
