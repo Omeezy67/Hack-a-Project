@@ -1,0 +1,24 @@
+.Image {
+    width: 250px;
+    height: 170px;
+    border-radius: 2px;
+    align-self: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.button {
+    text-align: center;
+    background-color: rgb(26, 175, 0);
+    border-radius: 5px;
+    margin: 2rem 9rem 0 9rem;
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none!important;
+}
+
+.button:hover {
+    background-color: rgb(0, 97, 16);
+}
