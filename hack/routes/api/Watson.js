@@ -35,27 +35,25 @@ router.get("/session", async (req, res) => {
 
 // hundle messages
 // POST /api/watson/message
-router.post("/message", async (req, res) => {
-
-    // payload
-    payload = assistant.message({
-        assistantId: process.env.WATSON_ASSISTANT_ID,
-        sessionId: req.headers.session_id,
-        input: {
-            message_type: "text",
-            text: req.body.input
-        }
-    })
+router.post("/message", async(req, res) => {
 
     // success
     try {
-        const message = await assistant.message(payload)
-        res.status(200).json(message["result"])
+        const message = await assistant.message({
+            assistantId: process.env.WATSON_ASSISTANT_ID,
+            sessionId: req.headers.session_id,
+            input: {
+                message_type: "text",
+                text: req.headers.text_input
+            }
+        })
+
+        res.json(message["result"]['output'])
 
     // if fail
     } catch (err) {
+        res.status(404).send("There was an error processing your request.")
         console.log(err)
-        res.send("There was an error processing your request.")
     }
 })
 
